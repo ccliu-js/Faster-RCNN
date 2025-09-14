@@ -26,5 +26,3 @@ class FasterRCNNModel(torch.nn.Module):
             return self.model(images, targets)  # 训练模式：返回 loss
         else:
             return self.model(images)  # 推理模式：返回预测结果
-
-
